@@ -1,0 +1,14 @@
+//Written By: Rakesh Yadav
+//Created on: July 23rd, 2017        
+                
+
+    var currentURL = window.location.href;
+	console.log(currentURL+" current");
+	  if (!currentURL.includes("?campaign") && (currentURL.includes("www.youtube.com"))){
+	console.log(currentURL+" entered");
+                  var newURL = currentURL.concat("?campaign");
+console.log(newURL+" new");
+                  window.location.assign(newURL);
+		    //location.assign(newURL);
+console.log("assigned!");
+           }
